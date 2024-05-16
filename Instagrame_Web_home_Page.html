@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #main {
+            height: 632px;
+            width: 900px;
+            margin: 3% auto;
+            display: flex;
+
+        }
+
+        #phone-image {
+            height: 100%;
+            width: 50%;
+
+        }
+
+        #phone-image #phoneimage {
+            height: 100%;
+            position: relative;
+            width: 100%;
+        }
+
+        #phone-image #phoneprofile {
+            height: 535px;
+            /* width: 100%; */
+            position: absolute;
+            top: 10.5%;
+            left: 27.7%;
+        }
+
+        #login-page {
+            height: 100%;
+            width: 50%;
+            /* border: 1px solid black; */
+
+        }
+
+        #uper-login-item {
+            height: 409.567px;
+            width: 350px;
+            border: 1px solid rgb(223, 223, 223);
+            position: relative;
+        }
+
+        #lower-login-item {
+            margin-top: 10%;
+            height: 63px;
+            width: 350px;
+            border: 1px solid rgb(211, 211, 211);
+        }
+
+        #logo {
+            position: absolute;
+            top: 10%;
+            width: 175px;
+            height: 51px;
+            width: 175px;
+            margin-left: 78px;
+            margin-top: -10px;
+            /* border: 1px solid rgb(190, 190, 190); */
+        }
+
+        #logo img {
+            width: 200px;
+            height: 100px;
+
+        }
+
+        #login-details {
+            height: 275px;
+            width: 300px;
+            margin-top: -50px;
+            margin-left: -35px;
+        }
+
+        #username {
+            width: 250px;
+            height: 20px;
+            margin-top: 70px;
+            padding: 14px 0px 13px 14px;
+            ;
+        }
+
+        #password {
+            width: 250px;
+            height: 20px;
+            margin-top: 7px;
+            padding: 14px 0px 13px 14px;
+        }
+
+        #btn {
+            height: 20px;
+            width: 250px;
+            margin-top: 22px;
+            background-color: #429aff;
+            padding: 6px 0px 25px 12px;
+            color: white;
+            border: none;
+            font-weight: 800;
+            border-radius: 10px;
+
+
+        }
+
+        #line {
+            display: flex;
+            height: 1px;
+
+        }
+
+        #loginWithFacebook {
+            height: 20px;
+            width: 250px;
+            margin-top: 70px;
+            display: flex;
+        }
+
+        #Facebookbtn {
+            height: 20px;
+            border: none;
+            background-color: white;
+            font-weight: 800;
+            font-size: 14px;
+            line-height: 18px;
+            text-decoration: none;
+            margin-left: -10px;
+            color: #385185;
+        }
+
+        .fa-square-facebook {
+            float: left;
+            margin-top: 3px;
+            margin-left: 30px;
+            height: 0px;
+            width: 35px;
+            color: #385185;
+        }
+
+        .forgetpass .forget {
+            margin-left: 63px;
+            margin-top: 10px;
+        }
+
+        #lower-login-item .dont-have-account {
+            /* margin-left: 20px; */
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #lower-login-item span {
+            padding-left: 10px;
+            color: #3794ff;
+            font-weight: 800;
+        }
+
+        .login-by-google {
+            margin-top: 6%;
+            height: 90px;
+            width: 350px;
+            border: 1px solid rgb(211, 211, 211);
+        }
+
+        .login-by-google p {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .login-by-google img{
+            height: 35px;
+            margin-left: 35px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="phone-image">
+            <img id="phoneimage"
+                src="https://static.cdninstagram.com/images/instagram/xig/homepage/phones/home-phones.png?__makehaste_cache_breaker=HOgRclNOosk"
+                alt="phone image">
+            <img id="phoneprofile" src="./instaPhone.png" alt="">
+        </div>
+        <div id="login-page">
+            <div id="uper-login-item">
+                <div id="logo">
+                    <img src="./Logo-Instagram.png" alt="">
+                    <div id="login-details">
+                        <form action="">
+                            <input type="text" id="username" placeholder="Phone number,username, or email" />
+                            <input type="password" id="password" placeholder="Password" /><br>
+                            <button id="btn">Log in</button>
+                            <div id="line">
+                                <hr style="height: 0.1px; width: 100px; margin-top: 32px; color: #ffffff ">
+                                <span
+                                    style="padding: 0px 10px 9px 14px; margin-top: 24px; color: #757575; font-weight: 700;  color: #385185;">OR</span>
+                                <hr style="height: 0.1px; width: 100px; margin-top: 32px; color: #f3f3f3" />
+
+                            </div>
+                            <div id="loginWithFacebook">
+                                <i class="fa-brands fa-square-facebook"></i><button id="Facebookbtn"></i>Log in with
+                                    Facebook</button>
+                            </div>
+                            <div class="forgetpass">
+                                <p class="forget">Forget password?</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="lower-login-item">
+                <p class="dont-have-account">Don't have an account ?<span>Sign up</span></p>
+            </div>
+            <div class="login-by-google">
+                <p>Get the app.</p>
+                <img src="./google.png" alt="">
+                <img src="./microsoft.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
